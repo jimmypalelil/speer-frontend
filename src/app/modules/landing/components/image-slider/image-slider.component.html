@@ -1,0 +1,20 @@
+<div class="main-container">
+
+  <ng-container *ngFor="let i of [0, 1,2]">
+    <img [src]="currentImage.url"  *ngIf="currentImage.index === i"/>
+  </ng-container>
+
+  <div class="image-text">
+    <p class="title">INTERACTIVE CONCERT EXPERIENCE</p>
+
+    <p class="subtitle">Experience your favourite artists like never before and from the comfort of your own home.</p>
+
+    <button class="try-button">TRY IT NOW</button>
+  </div>
+
+  <div class="slider-buttons">
+    <input *ngFor="let i of [0, 1, 2]" (change)="setImage(i)"
+           [checked]="currentImage.index === i"
+           type="radio" name="slider" />
+  </div>
+</div>

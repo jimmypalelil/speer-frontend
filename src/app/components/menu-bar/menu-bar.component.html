@@ -1,0 +1,15 @@
+<div #menuContainer class="main-container" [ngClass]="{'expanded': expanded}">
+  <div class="bg-mask" #mask [ngClass]="{'mask-expanded': expanded}"></div>
+  <div class="menu" #menu>
+    <div class="header">
+      <i (click)="toggleMenu()" class="fa fa-bars"></i>
+      EXP | CON
+    </div>
+
+    <div *ngIf="expanded" class="menu-list">
+      <div>WHAT IS IT</div>
+      <div>PERKS</div>
+      <div>PRICING</div>
+    </div>
+  </div>
+</div>

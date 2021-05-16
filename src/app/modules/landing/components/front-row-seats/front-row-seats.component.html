@@ -1,0 +1,16 @@
+<div class="main-container">
+  <div class="try-bar">
+    <app-try-button [buttonConfig]="buttonConfig"></app-try-button>
+  </div>
+
+  <div class="display-panel">
+    <h1>PERKS</h1>
+
+    <div class="perk-list">
+      <div class="perk-container perk-{{i}}" *ngFor="let perk of perks; let i = index">
+        <p class="title">{{perk}}</p>
+        <p class="perk-details">{{perkDetails}}</p>
+      </div>
+    </div>
+  </div>
+</div>

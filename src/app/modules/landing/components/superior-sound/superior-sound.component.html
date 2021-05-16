@@ -1,0 +1,25 @@
+<div class="main-container">
+
+  <div class="try-bar">
+    <button>TRY IT NOW</button>
+  </div>
+
+  <div class="display-panel">
+    <div class="left-panel">
+      <p class="title">SUPERIOR SOUND</p>
+      <p class="sub-title">Experience live versions of your favourite songs.</p>
+      <button>SEE DEMO</button>
+    </div>
+
+    <div class="right-panel">
+      <img class="left-speaker" src="assets/images/sound/medium17.png">
+
+      <div class="right-speaker-container">
+        <img class="right-speaker" src="assets/images/sound/medium27.png">
+        <div class="click-btn" (click)="music.play()">CLICK</div>
+      </div>
+    </div>
+  </div>
+
+  <audio #music src="assets/audio/mario.wav"></audio>
+</div>
